@@ -1,0 +1,305 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Website hosting & domeinnaam | VB-DigitalMarketing';
+const description = 'Snelle en veilige website hosting inclusief domeinnaamregistratie. Wij regelen alles zodat jouw website snel online is en altijd bereikbaar blijft.';
+---
+<BaseLayout {title} {description}>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen overflow-hidden bg-[#006633] flex items-center">
+    <div class="absolute right-0 top-0 hidden h-full w-1/2 lg:block">
+      <img src="/images/image00008.jpeg" alt="Website hosting en domeinnaam" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#006633] via-[#006633]/60 to-transparent"></div>
+    </div>
+    <div class="container relative z-10 py-24 lg:py-0">
+      <div class="max-w-xl">
+        <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Hosting &amp; domeinnaam</span>
+        <h1 class="mt-6 text-5xl font-bold tracking-tight text-white lg:text-6xl">
+          Snelle hosting &amp; jouw eigen domeinnaam
+        </h1>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-white/80">
+          Wij regelen de hosting en domeinnaam van jouw website van A tot Z. Snel, veilig en altijd bereikbaar — zonder technisch gedoe aan jouw kant.
+        </p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="/contact" class="btn-brand">Plan een gesprek</a>
+          <a href="/cases" class="btn-ghost">Bekijk voorbeelden</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews — compact -->
+  <section class="bg-white py-8 border-b border-slate-100">
+    <div class="container">
+      <div class="flex flex-wrap items-center gap-6">
+        <div class="flex items-center gap-2.5 rounded-xl border border-slate-200 bg-slate-50 px-5 py-3">
+          <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+          <span class="text-sm font-semibold text-slate-700">Google Reviews</span>
+          <span class="text-yellow-400 text-base leading-none">★★★★★</span>
+          <span class="text-sm font-bold text-slate-900">4.9</span>
+          <span class="text-sm text-slate-400">/ 18 beoordelingen</span>
+        </div>
+        <p class="text-sm text-slate-500 italic">"Ze regelden mijn domein en hosting in één dag." — Jan Willems</p>
+        <p class="hidden text-sm text-slate-500 italic md:block">"Mijn site is nooit offline geweest." — Rob Bakker</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wat is hosting — uitleg -->
+  <section class="bg-white py-20">
+    <div class="container">
+      <div class="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm lg:grid lg:grid-cols-2">
+        <div class="relative min-h-[320px] lg:min-h-full">
+          <img
+            src="/images/hero-bg.jpeg"
+            alt="Server en hosting"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#006633]/40 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-50/10"></div>
+        </div>
+        <div class="flex flex-col justify-center px-10 py-14">
+          <span class="section-label">Wat is inbegrepen</span>
+          <h2 class="mt-4 text-3xl font-semibold leading-tight text-slate-900">
+            Alles voor een snelle, veilige online aanwezigheid
+          </h2>
+          <p class="mt-4 text-slate-600">
+            Van het registreren van jouw domeinnaam tot het instellen van snelle hosting — wij regelen het volledig. Jij hoeft alleen maar te zeggen welke naam je wilt.
+          </p>
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Domeinnaamregistratie (.nl, .com, etc.)</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Razendsnel SSD-hosting</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Gratis SSL-certificaat (https)</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Zakelijk e-mailadres op jouw domein</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">99,9% uptime-garantie</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Dagelijkse automatische backups</span>
+            </li>
+          </ul>
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="/contact" class="btn-brand">Plan een gesprek</a>
+            <a href="/website-onderhoud" class="inline-flex items-center justify-center rounded-lg border border-[#006633] px-6 py-3 text-sm font-semibold text-[#006633] transition hover:bg-[#006633]/5">Bekijk onderhoud</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hostingpakketten -->
+  <section class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="max-w-2xl mb-12">
+        <span class="section-label">Hostingpakketten</span>
+        <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Kies jouw hostingpakket</h2>
+        <p class="mt-4 text-lg text-slate-600">Alle pakketten inclusief domeinnaam, SSL en e-mail. Geen verborgen kosten.</p>
+      </div>
+      <div class="grid gap-8 lg:grid-cols-3">
+
+        <article class="flex flex-col rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#006633]/10 text-2xl">&#127760;</div>
+          <h3 class="mt-5 text-xl font-semibold text-slate-900">Starter</h3>
+          <p class="mt-2 text-slate-600">Snel online met jouw eigen domeinnaam.</p>
+          <div class="mt-5 flex items-baseline gap-1">
+            <span class="text-4xl font-bold text-slate-900">&euro;5</span>
+            <span class="text-slate-500">/mnd</span>
+          </div>
+          <ul class="mt-7 flex-1 space-y-3 text-sm text-slate-600">
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> 1 domeinnaam (.nl of .com)</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> SSD-hosting, 5 GB opslag</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Gratis SSL-certificaat</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> 1 zakelijk e-mailadres</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Dagelijkse backup</li>
+          </ul>
+          <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#006633] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#004d26]">Kies Starter</a>
+        </article>
+
+        <article class="relative flex flex-col rounded-2xl border-2 border-[#7C3AED] bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-[#7C3AED] px-4 py-2 text-xs font-bold text-white">Meest gekozen</div>
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#7C3AED]/10 text-2xl">&#9889;</div>
+          <h3 class="mt-5 text-xl font-semibold text-slate-900">Business</h3>
+          <p class="mt-2 text-slate-600">Meer ruimte, meer snelheid en meer e-mails.</p>
+          <div class="mt-5 flex items-baseline gap-1">
+            <span class="text-4xl font-bold text-slate-900">&euro;10</span>
+            <span class="text-slate-500">/mnd</span>
+          </div>
+          <ul class="mt-7 flex-1 space-y-3 text-sm text-slate-600">
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Tot 3 domeinnamen</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> SSD-hosting, 20 GB opslag</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Gratis SSL-certificaat</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> 5 zakelijke e-mailadressen</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Prioriteit uptime-monitoring</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Dagelijkse backup + herstel</li>
+          </ul>
+          <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Kies Business</a>
+        </article>
+
+        <article class="flex flex-col rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#006633]/10 text-2xl">&#128640;</div>
+          <h3 class="mt-5 text-xl font-semibold text-slate-900">Premium</h3>
+          <p class="mt-2 text-slate-600">Voor meerdere sites en maximale prestaties.</p>
+          <div class="mt-5 flex items-baseline gap-1">
+            <span class="text-4xl font-bold text-slate-900">&euro;20</span>
+            <span class="text-slate-500">/mnd</span>
+          </div>
+          <ul class="mt-7 flex-1 space-y-3 text-sm text-slate-600">
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Onbeperkt domeinnamen</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> SSD-hosting, 50 GB opslag</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Gratis SSL-certificaat</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Onbeperkt e-mailadressen</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> CDN &amp; extra snelheid</li>
+            <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Dedicated support</li>
+          </ul>
+          <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#006633] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#004d26]">Kies Premium</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Domeinnaam uitleg -->
+  <section class="bg-white py-20">
+    <div class="container">
+      <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+        <div>
+          <span class="section-label">Jouw domeinnaam</span>
+          <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Wat is een domeinnaam en waarom is het belangrijk?</h2>
+          <p class="mt-4 text-lg text-slate-600">Een domeinnaam is jouw adres op het internet — bijvoorbeeld <span class="font-semibold text-[#006633]">jouwbedrijf.nl</span>. Het is het eerste wat klanten zien en het versterkt je uitstraling direct.</p>
+          <p class="mt-4 text-slate-600">Wij helpen je bij het kiezen van de juiste domeinnaam, registreren deze en koppelen hem aan jouw website. Zo hoef jij er niet aan te denken.</p>
+          <ul class="mt-8 space-y-3 text-slate-600">
+            <li class="flex items-start gap-3"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Wij registreren jouw .nl, .com, .be of elk ander domein</li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Automatische verlenging zodat je domein nooit verloopt</li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Koppeling aan jouw e-mail en website inbegrepen</li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Meerdere domeinen mogelijk (bijv. .nl én .com)</li>
+          </ul>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="text-3xl">&#127760;</span>
+            <h3 class="mt-4 font-semibold text-slate-900">.nl domein</h3>
+            <p class="mt-2 text-sm text-slate-600">Ideaal voor Nederlandse bedrijven en lokaal vertrouwen.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="text-3xl">&#128205;</span>
+            <h3 class="mt-4 font-semibold text-slate-900">.com domein</h3>
+            <p class="mt-2 text-sm text-slate-600">Internationaal herkenbaar en breed inzetbaar.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="text-3xl">&#128231;</span>
+            <h3 class="mt-4 font-semibold text-slate-900">Zakelijk e-mail</h3>
+            <p class="mt-2 text-sm text-slate-600">@jouwbedrijf.nl — professioneler dan Gmail of Outlook.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="text-3xl">&#128274;</span>
+            <h3 class="mt-4 font-semibold text-slate-900">SSL-beveiliging</h3>
+            <p class="mt-2 text-sm text-slate-600">Het groene slotje in de browser — standaard bij elk pakket.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voordelen hosting -->
+  <section class="bg-[#006633] py-20 text-white">
+    <div class="container">
+      <div class="mb-12 max-w-2xl">
+        <p class="text-sm uppercase tracking-[0.28em] text-white/70">Waarom kiezen voor onze hosting?</p>
+        <h2 class="mt-4 text-4xl font-semibold">Snel, veilig en altijd bereikbaar</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#9889;</span>
+          <h3 class="mt-4 text-lg font-semibold">Razendsnel</h3>
+          <p class="mt-2 text-sm text-slate-300">SSD-servers en CDN voor de snelst mogelijke laadtijden.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#128274;</span>
+          <h3 class="mt-4 text-lg font-semibold">Beveiligd</h3>
+          <p class="mt-2 text-sm text-slate-300">SSL, firewalls en dagelijkse malware-scans standaard inbegrepen.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#128200;</span>
+          <h3 class="mt-4 text-lg font-semibold">99,9% uptime</h3>
+          <p class="mt-2 text-sm text-slate-300">We monitoren jouw site 24/7 en grijpen direct in bij problemen.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#128101;</span>
+          <h3 class="mt-4 text-lg font-semibold">Persoonlijk</h3>
+          <p class="mt-2 text-sm text-slate-300">Geen anoniem ticketsysteem — een mens die jou kent en opneemt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="max-w-2xl mb-10">
+        <span class="section-label">Veelgestelde vragen</span>
+        <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Vragen over hosting &amp; domeinnamen</h2>
+      </div>
+      <div class="max-w-3xl space-y-4">
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Kan ik mijn bestaande domeinnaam meenemen?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Ja. We regelen de verhuizing van jouw domeinnaam volledig. Jij hoeft alleen toestemming te geven en wij doen de rest.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Wat als mijn gewenste domeinnaam al bezet is?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">We zoeken samen naar alternatieven. Soms is een .com nog beschikbaar als .nl al weg is, of omgekeerd. We adviseren je gratis.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Is hosting inbegrepen als jullie mijn website bouwen?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Hosting is niet inbegrepen in een websiteproject, maar wordt apart aangeboden via onze pakketten. Je kiest zelf wat het beste past.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Kan ik meerdere websites op één hostingpakket zetten?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Bij het Business- en Premium-pakket kun je meerdere websites en domeinen op hetzelfde pakket beheren.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[#006633] py-20">
+    <div class="container text-center">
+      <h2 class="text-4xl font-semibold text-white">Klaar om online te gaan?</h2>
+      <p class="mt-4 text-xl text-white/80">Plan een gratis gesprek en wij regelen jouw hosting en domeinnaam van A tot Z.</p>
+      <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <a href="/contact" class="inline-flex rounded-lg bg-white px-8 py-4 text-sm font-semibold text-[#006633] transition hover:bg-slate-100">Plan een gratis gesprek</a>
+        <a href="/website-laten-maken" class="inline-flex rounded-lg border border-white/30 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/10">Website laten maken</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

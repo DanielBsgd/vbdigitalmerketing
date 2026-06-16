@@ -1,0 +1,175 @@
+﻿---
+import '../styles/global.css';
+import ContactForm from '../components/ContactForm.astro';
+const { title, description, noContactForm = false } = Astro.props;
+const siteUrl = Astro.site || 'https://voorbeeld.nl';
+const ogImage = '/images/og-image.svg';
+---
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={`${siteUrl}${Astro.url.pathname}`} />
+    <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+
+    <!-- Globale paarse kaart-randen op alle pagina's -->
+    <style>
+      /* Alle witte kaarten krijgen een zachte paarse rand */
+      main .rounded-2xl.bg-white,
+      main .rounded-xl.bg-white,
+      main .rounded-3xl.bg-white { border-color: rgba(124,58,237,0.18) !important; }
+
+      /* Details/FAQ blokken */
+      main details { border-color: rgba(124,58,237,0.2) !important; }
+
+      /* Dropdown menu behoud slate kleur */
+      header .rounded-xl { border-color: rgba(124,58,237,0.2) !important; }
+
+      /* Section-label pill: iets meer paars */
+      .section-label {
+        border-color: rgba(124,58,237,0.25) !important;
+        background: rgba(124,58,237,0.07) !important;
+        color: #7C3AED !important;
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": title,
+        "url": siteUrl,
+        "description": description
+      })}
+    </script>
+  </head>
+  <body class="min-h-screen bg-white text-slate-800">
+    <header class="sticky top-0 z-50 bg-white shadow-sm" style="border-bottom: 2px solid transparent; border-image: linear-gradient(90deg,#006633 0%,#7C3AED 50%,#006633 100%) 1;">
+      <div class="container flex items-center justify-between gap-4 py-4">
+        <a href="/" class="flex items-center gap-2">
+          <img src="/images/vb-logo.jpg" alt="VB Digital Marketing" class="h-12 w-auto object-contain rounded-lg" />
+        </a>
+        <nav class="flex items-center gap-6 text-sm sm:text-base">
+          <a href="/over-ons" class="nav-link">Over ons</a>
+          <div class="group relative">
+            <button class="nav-link flex cursor-pointer items-center gap-1 border-0 bg-transparent p-0 font-medium">
+              Expertises
+              <svg class="h-3.5 w-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute left-0 top-full z-50 hidden pt-1 group-hover:block">
+              <div class="w-72 rounded-xl border border-slate-200 bg-white py-2 shadow-xl">
+                <a href="/website-laten-maken" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">Website laten maken</a>
+                <a href="/maandelijkse-werkzaamheden" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">Maandelijkse werkzaamheden</a>
+                <div class="mx-5 my-1 border-t border-slate-100"></div>
+                <a href="/website-onderhoud" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">Website onderhoud</a>
+                <a href="/website-hosting-en-domeinnaam" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">Website hosting &amp; domeinnaam</a>
+              </div>
+            </div>
+          </div>
+          <a href="/cases" class="nav-link">Cases</a>
+          <a href="/locaties" class="nav-link">Lokale pagina's</a>
+          <a href="/blog" class="nav-link">Blog</a>
+        </nav>
+        <div class="ml-4">
+          <a href="/contact" class="btn-brand">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main><slot /></main>
+
+    <!-- Entrance animations — werkt op alle pagina's -->
+    <script is:inline>
+    (function () {
+      function init() {
+        var main = document.querySelector('main');
+        if (!main) return;
+        var pool = [];
+
+        function reg(el, delay) {
+          if (!el || el.classList.contains('vb-anim')) return;
+          el.style.setProperty('--vb-d', (delay || 0).toFixed(2) + 's');
+          el.classList.add('vb-anim');
+          pool.push(el);
+        }
+
+        /* 1 — Hero-inhoud (grote groene secties) */
+        main.querySelectorAll('[class*="min-h-screen"] .container > div > *:not(.absolute)').forEach(function (el, i) {
+          reg(el, 0.02 + i * 0.07);
+        });
+
+        /* 2 — Secties buiten hero */
+        main.querySelectorAll('section:not([class*="min-h-screen"])').forEach(function (sec) {
+          /* koppen & labels */
+          sec.querySelectorAll('h2, h3, .section-label').forEach(function (el) {
+            if (!el.closest('[class*="min-h-screen"]')) reg(el, 0);
+          });
+
+          /* grid-kaarten met stagger */
+          sec.querySelectorAll('.grid > *:not(.absolute)').forEach(function (el) {
+            var idx = Array.from(el.parentElement.children).indexOf(el);
+            reg(el, Math.min(idx * 0.06, 0.25));
+          });
+
+          /* FAQ details */
+          sec.querySelectorAll('details').forEach(function (el, i) {
+            reg(el, Math.min(i * 0.05, 0.2));
+          });
+
+          /* los staande grote blokken (niet in grid) */
+          sec.querySelectorAll(':scope > .container > .rounded-2xl, :scope > .container > .rounded-3xl').forEach(function (el) {
+            if (!el.closest('.grid')) reg(el, 0);
+          });
+        });
+
+        /* IO — vuurt direct voor elementen al in beeld */
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('vb-in');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.01, rootMargin: '0px 0px 80px 0px' });
+
+        pool.forEach(function (el) { io.observe(el); });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+    </script>
+
+    {!noContactForm && <ContactForm />}
+
+    <footer class="bg-white py-10" style="border-top: 2px solid transparent; border-image: linear-gradient(90deg,#7C3AED 0%,#006633 50%,#7C3AED 100%) 1;">
+      <div class="container text-sm text-slate-500">
+        <p>VB-DigitalMarketing &mdash; website voor bouwbedrijven, vakmensen en coaches.</p>
+        <p class=”mt-2”>&copy; {new Date().getFullYear()} VB-DigitalMarketing</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import locaties from '../../data/locaties.json';
+const title = 'Lokale pagina's | VB-DigitalMarketing';
+const description = 'Voorbeelden van lokale pagina's voor vakmensen, met unieke content en focus op regionale zoekwoorden.';
+---
+<BaseLayout {title} {description}>
+  <section class="relative flex min-h-screen items-center overflow-hidden bg-[#006633]">
+    <!-- Foto rechts -->
+    <div class="absolute right-0 top-0 hidden h-full w-1/2 lg:block">
+      <img src="/images/hero-bg.jpeg" alt="Lokale pagina's" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#006633] via-[#006633]/60 to-transparent"></div>
+    </div>
+    <div class="container relative z-10 py-24 lg:py-0">
+      <div class="max-w-xl">
+        <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Lokale pagina's</span>
+        <h1 class="mt-6 text-5xl font-bold tracking-tight text-white lg:text-6xl">Lokaal gevonden worden in jouw regio</h1>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-white/80">We bouwen SEO-sterke pagina's voor jouw stad of regio. Elke pagina is uniek geschreven voor jouw vak en jouw plaats.</p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="/contact" class="btn-brand">Plan een gesprek</a>
+          <a href="/website-laten-maken" class="btn-ghost">Meer over websites</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-16">
+    <div class="container">
+      <div class="grid gap-8 lg:grid-cols-2">
+        {locaties.map((locatie) => (
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl" key={locatie.slug}>
+            <a href={`/locaties/${locatie.slug}`} class="text-2xl font-semibold text-slate-900 hover:text-[#006633]">Website voor {locatie.niche} in {locatie.stad}</a>
+            <p class="mt-4 text-slate-600">{locatie.intro}</p>
+            <ul class="mt-4 space-y-2 text-slate-600">
+              {locatie.usps.map((usp) => (
+                <li key={usp} class="flex items-start gap-3"><span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-[#006633]"></span>{usp}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

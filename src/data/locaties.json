@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "website-voor-schilders-groningen",
+    "stad": "Groningen",
+    "niche": "schilders",
+    "intro": "Website voor schilders in Groningen die klanten lokaal willen vinden.",
+    "usps": [
+      "Scherpe landingspagina voor schilderwerk",
+      "Duidelijke contactknoppen voor offertes",
+      "SEO gericht op lokale zoekwoorden"
+    ]
+  },
+  {
+    "slug": "website-voor-loodgieters-utrecht",
+    "stad": "Utrecht",
+    "niche": "loodgieters",
+    "intro": "Website voor loodgieters in Utrecht met focus op snelle service en vertrouwen.",
+    "usps": [
+      "Toon je servicegebieden duidelijk",
+      "Sterke call-to-action voor spoedklussen",
+      "Unieke content voor lokale vindbaarheid"
+    ]
+  }
+]

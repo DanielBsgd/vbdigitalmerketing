@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WaveDivider from '../components/WaveDivider.astro';
+const title = 'Diensten | VB-DigitalMarketing';
+const description = 'Onze diensten voor websites, SEO en online groei voor lokale vakmensen.';
+---
+<BaseLayout {title} {description}>
+  <section class="bg-[#006633] py-20">
+    <div class="container">
+      <div class="grid gap-10 lg:grid-cols-[1.3fr_0.9fr] lg:items-start">
+        <div>
+          <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Diensten</span>
+          <h1 class="mt-6 text-5xl font-semibold tracking-tight text-white sm:text-6xl">Professionele online groei voor vakmensen</h1>
+          <p class="mt-6 max-w-3xl text-xl leading-9 text-white/80">Wij bouwen slimme websites, versterken jouw lokale vindbaarheid en leveren overtuigende content zodat je meer aanvragen ontvangt van klanten uit de buurt.</p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="/contact" class="btn-brand">Plan een gratis gesprek</a>
+            <a href="/maandelijkse-werkzaamheden" class="btn-ghost">Bekijk plannen</a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-white/20 bg-white p-8 shadow-md">
+          <p class="text-xs uppercase tracking-[0.28em] text-[#006633] font-semibold">Aanmelden</p>
+          <h2 class="mt-4 text-3xl font-semibold text-slate-900">Ontvang een gratis plan voor jouw online groei</h2>
+          <p class="mt-4 text-slate-600">Vul je gegevens in en wij sturen een snel voorstel waarmee jouw website direct beter presteert.</p>
+          <div class="mt-8 space-y-4">
+            <label class="block">
+              <span class="text-sm text-slate-700">E-mailadres</span>
+              <input type="email" placeholder="naam@bedrijf.nl" class="mt-2 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-[#006633] focus:outline-none" />
+            </label>
+            <label class="block">
+              <span class="text-sm text-slate-700">Website of branche</span>
+              <input type="text" placeholder="Schilder, timmerman, loodgieter..." class="mt-2 w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-[#006633] focus:outline-none" />
+            </label>
+          </div>
+          <a href="/contact" class="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Vraag direct advies aan</a>
+          <p class="mt-3 text-sm text-slate-500">Geen verplichtingen. Alleen een praktisch voorstel en heldere next steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="grid gap-6 lg:grid-cols-3">
+
+        <!-- Zorgeloos -->
+        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">&#128737;</span>
+            <div>
+              <h2 class="text-xl font-semibold leading-tight text-slate-900">Onderhoud &mdash; "Zorgeloos"</h2>
+              <span class="mt-1 inline-block rounded-full bg-[#006633]/10 px-3 py-0.5 text-xs font-medium uppercase tracking-wide text-[#006633]">Verplicht &middot; hoort bij elke site</span>
+            </div>
+          </div>
+          <div class="mt-5 flex items-baseline gap-2">
+            <span class="text-4xl font-bold text-slate-900">&euro;10</span>
+            <span class="text-slate-500">/mnd</span>
+            <span class="ml-2 text-sm text-slate-500">of &euro;100/jaar</span>
+          </div>
+          <p class="mt-1 text-sm text-[#006633] font-medium">Jaarlijks = 2 maanden voordeel</p>
+          <p class="mt-4 text-slate-700">Zorgt dat je site online, veilig en bereikbaar blijft.</p>
+          <ul class="mt-6 flex-1 space-y-3 text-slate-600">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Snelle, veilige hosting + SSL</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Domeinkoppeling en verlenging bewaakt</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Automatische backups</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Uptime-monitoring</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Software- en beveiligingsupdates</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Een mens die opneemt als er iets is</li>
+          </ul>
+          <a href="/contact" class="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-[#006633] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#004d26]">Kies Zorgeloos</a>
+        </article>
+
+        <!-- Groei Licht -->
+        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">&#127807;</span>
+            <div>
+              <h2 class="text-xl font-semibold leading-tight text-slate-900">Groei &mdash; Licht</h2>
+              <span class="mt-1 inline-block rounded-full bg-[#006633]/10 px-3 py-0.5 text-xs font-medium uppercase tracking-wide text-[#006633]">Gevonden blijven worden</span>
+            </div>
+          </div>
+          <div class="mt-5 flex items-baseline gap-2">
+            <span class="text-4xl font-bold text-slate-900">&plusmn;&nbsp;&euro;99</span>
+            <span class="text-slate-500">/mnd</span>
+          </div>
+          <p class="mt-4 text-slate-700">Voor wie gevonden wil blijven worden. Wij houden de motor draaiend.</p>
+          <ul class="mt-6 flex-1 space-y-3 text-slate-600">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Alles uit Zorgeloos</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> 2 SEO-blogs per maand</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Google Bedrijfsprofiel onderhouden</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Kleine tekstwijzigingen inbegrepen</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Kwartaalrapport + update</li>
+          </ul>
+          <a href="/contact" class="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-[#006633] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#004d26]">Kies Groei Licht</a>
+        </article>
+
+        <!-- Groei Actief -->
+        <article class="group relative flex flex-col overflow-hidden rounded-2xl border-2 border-[#7C3AED] bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="absolute right-6 top-6 rounded-full bg-[#7C3AED] px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">Populair</div>
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">&#128640;</span>
+            <div>
+              <h2 class="text-xl font-semibold leading-tight text-slate-900">Groei &mdash; Actief</h2>
+              <span class="mt-1 inline-block rounded-full bg-[#7C3AED]/10 px-3 py-0.5 text-xs font-medium uppercase tracking-wide text-[#7C3AED]">Marktaandeel pakken</span>
+            </div>
+          </div>
+          <div class="mt-5 flex items-baseline gap-2">
+            <span class="text-4xl font-bold text-slate-900">&plusmn;&nbsp;&euro;249</span>
+            <span class="text-slate-500">/mnd</span>
+          </div>
+          <p class="mt-4 text-slate-700">Voor wie echt wil groeien en marktaandeel pakt.</p>
+          <ul class="mt-6 flex-1 space-y-3 text-slate-600">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Alles uit Licht</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> 2&ndash;4 blogs per maand</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Nieuwe lokale- en dienstpagina's</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Actieve lokale SEO / Google Maps</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Maandrapport + maandelijks contact</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633]">&#10003;</span> Voorrang op wijzigingen</li>
+          </ul>
+          <a href="/contact" class="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Kies Groei Actief</a>
+        </article>
+
+      </div>
+
+      <div class="mt-16 rounded-2xl bg-[#006633] p-10 text-white shadow-2xl">
+        <div class="grid gap-8 lg:grid-cols-3">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.32em] text-white/70">Onze aanpak</p>
+            <h2 class="mt-4 text-3xl font-semibold">Resultaatgerichte stappen</h2>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+            <h3 class="text-xl font-semibold text-white">1. Orientatie</h3>
+            <p class="text-slate-300">We beginnen met jouw doelen, doelgroep en concurrentie in je regio.</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+            <h3 class="text-xl font-semibold text-white">2. Uitvoering</h3>
+            <p class="text-slate-300">Website, SEO en content die samen zorgen voor meer aanvragen en zichtbaarheid.</p>
+          </div>
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+            <h3 class="text-xl font-semibold text-white">3. Groei</h3>
+            <p class="text-slate-300">Continue verbetering van je lokale positie en bezoekersgedrag voor langdurig resultaat.</p>
+          </div>
+        </div>
+        <a href="/contact" class="mt-8 inline-flex rounded-lg bg-[#7C3AED] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Plan een gratis strategiegesprek</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

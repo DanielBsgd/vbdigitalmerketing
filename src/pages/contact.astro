@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Contact | VB-DigitalMarketing';
+const description = 'Vraag een vrijblijvende offerte aan of plan een kennismaking met VB-DigitalMarketing.';
+---
+<BaseLayout {title} {description}>
+  <section class="bg-[#006633] py-16">
+    <div class="container">
+      <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:items-start">
+        <div>
+          <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Contact</span>
+          <h1 class="mt-6 text-4xl font-semibold text-white">Neem contact op</h1>
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-white/80">Vul het formulier in voor een vrijblijvend gesprek over je website, lokale SEO of een nieuw online groeipad.</p>
+          <div class="mt-10 space-y-6 rounded-3xl border border-white/20 bg-white p-8 shadow-md">
+            <p class="text-slate-700"><strong class="text-slate-900">Mail:</strong> hallo@vb-digitalmarketing.nl</p>
+            <p class="text-slate-700"><strong class="text-slate-900">Telefoon:</strong> 06 12 34 56 78</p>
+            <p class="text-slate-700">Of stuur direct een bericht met wat je nodig hebt, dan plannen we een korte kennismaking.</p>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-white/20 bg-white p-8 shadow-md">
+          <form class="space-y-6">
+            <label class="block text-sm font-medium text-slate-700">
+              Naam
+              <input type="text" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 p-3 focus:border-[#006633] focus:outline-none" placeholder="Jouw naam" />
+            </label>
+            <label class="block text-sm font-medium text-slate-700">
+              E-mail
+              <input type="email" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 p-3 focus:border-[#006633] focus:outline-none" placeholder="naam@voorbeeld.nl" />
+            </label>
+            <label class="block text-sm font-medium text-slate-700">
+              Bericht
+              <textarea rows="5" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 p-3 focus:border-[#006633] focus:outline-none" placeholder="Waar kan ik je mee helpen?"></textarea>
+            </label>
+            <button type="submit" class="inline-flex rounded-full bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Verstuur</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

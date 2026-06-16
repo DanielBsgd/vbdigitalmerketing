@@ -1,0 +1,20 @@
+﻿---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const title = 'Content & Blog | VB-DigitalMarketing';
+const description = 'Contentstrategie en blogs voor vakmensen, gericht op lokale vindbaarheid.';
+---
+
+<BaseLayout {title} {description}>
+  <section class="container py-16 bg-[#004d26] rounded-lg">
+    <div class="grid gap-8 lg:grid-cols-2 items-center">
+      <div>
+        <h1 class="text-3xl font-semibold text-slate-900">Content & Blog</h1>
+        <p class="mt-4 text-slate-700">We schrijven content die klanten aanspreekt en zoekmachinevriendelijk is â€” lokaal en relevant voor jouw vak.</p>
+        <a href="/contact" class="btn-brand mt-6">Vraag een contentplan aan</a>
+      </div>
+      <div>
+        <img src="/images/service-content-photo.svg" alt="Content foto" class="rounded-lg shadow-md" />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

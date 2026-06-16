@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" fill="none">
+  <rect width="1200" height="600" rx="24" fill="#f1f5f9"/>
+  <g transform="translate(80,80)">
+    <rect x="0" y="0" width="320" height="160" rx="12" fill="#0f766e" opacity="0.12"/>
+    <rect x="360" y="0" width="320" height="160" rx="12" fill="#0f766e" opacity="0.08"/>
+    <rect x="720" y="0" width="320" height="160" rx="12" fill="#0f766e" opacity="0.06"/>
+    <circle cx="80" cy="240" r="72" fill="#e6fffa" stroke="#0f766e" stroke-width="6"/>
+    <rect x="180" y="210" width="820" height="120" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="210" y="255" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="28">Team VB-DigitalMarketing</text>
+    <text x="210" y="290" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="18">Lokale websites met aandacht voor vakmanschap</text>
+  </g>
+</svg>

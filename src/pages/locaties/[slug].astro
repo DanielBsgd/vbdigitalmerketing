@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import locaties from '../../data/locaties.json';
+
+export async function getStaticPaths() {
+  return locaties.map((locatie) => ({ params: { slug: locatie.slug } }));
+}
+
+const { slug } = Astro.params;
+const locatie = locaties.find((item) => item.slug === slug);
+
+if (!locatie) {
+  throw new Error(`Locatie niet gevonden: ${slug}`);
+}
+
+const title = `Website voor ${locatie.niche} in ${locatie.stad}`;
+const description = locatie.intro;
+---
+<BaseLayout {title} {description}>
+  <section class="bg-white py-16">
+    <div class="container">
+      <div class="grid gap-10 lg:grid-cols-[0.7fr_0.5fr] lg:items-start">
+        <div>
+          <p class="text-sm uppercase tracking-[0.24em] text-[#006633] font-semibold">Lokale website</p>
+          <h1 class="mt-4 text-4xl font-semibold text-slate-900">{title}</h1>
+          <p class="mt-6 text-lg leading-8 text-slate-700">{locatie.intro} Met een sterke, lokale website zorg je dat klanten in {locatie.stad} je vinden wanneer ze direct hulp zoeken.</p>
+          <div class="mt-10 space-y-6 rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <h2 class="text-2xl font-semibold text-slate-900">Wat je krijgt</h2>
+            <ul class="mt-6 space-y-3 text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Unieke pagina gericht op lokale zoekopdrachten</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Ondersteuning bij teksten en call-to-actions</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Snelle mobiele weergave voor prospects onderweg</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Duidelijke link naar contact en offerte</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="rounded-3xl bg-[#006633] p-8 text-white shadow-2xl">
+          <h2 class="text-2xl font-semibold">Passend voor</h2>
+          <p class="mt-4 text-slate-200">Kleine en middelgrote bedrijven in {locatie.stad} die klanten willen aantrekken met lokale vindbaarheid.</p>
+          <ul class="mt-6 space-y-3 text-slate-300">
+            <li class="flex items-start gap-2"><span class="text-white">&#10003;</span> Regionale SEO</li>
+            <li class="flex items-start gap-2"><span class="text-white">&#10003;</span> Lokale landingspagina's</li>
+            <li class="flex items-start gap-2"><span class="text-white">&#10003;</span> Betrouwbare presentatie</li>
+          </ul>
+          <a href="/contact" class="mt-8 inline-flex rounded-full bg-[#7C3AED] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Offerte opvragen</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

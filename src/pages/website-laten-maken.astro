@@ -1,0 +1,334 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Website laten maken | VB-DigitalMarketing';
+const description = 'Professionele website laten maken voor vakmensen en lokale ondernemers. Snel online, lokaal vindbaar en volledig op maat.';
+---
+<BaseLayout {title} {description}>
+
+  <!-- Hero — full screen, foto rechts -->
+  <section class="relative min-h-screen overflow-hidden bg-[#006633] flex items-center">
+    <!-- Foto rechts (absoluut gepositioneerd) -->
+    <div class="absolute right-0 top-0 hidden h-full w-1/2 lg:block">
+      <img src="/images/hero-bg.jpeg" alt="Professionele website laten maken" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#006633] via-[#006633]/60 to-transparent"></div>
+    </div>
+
+    <!-- Tekst links -->
+    <div class="container relative z-10 py-24 lg:py-0">
+      <div class="max-w-xl">
+        <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Website laten maken</span>
+        <h1 class="mt-6 text-5xl font-bold tracking-tight text-white lg:text-6xl">
+          Jouw professionele website, snel online
+        </h1>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-white/80">
+          Wij bouwen websites voor vakmensen die lokaal gevonden willen worden en meer aanvragen willen binnenhalen. Persoonlijk, snel en meetbaar effectief.
+        </p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="/contact" class="btn-brand">Plan een gesprek</a>
+          <a href="/cases" class="btn-ghost">Bekijk voorbeelden</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews — compact -->
+  <section class="bg-white py-8">
+    <div class="container">
+      <div class="flex flex-wrap items-center gap-6">
+        <!-- Google badge -->
+        <div class="flex items-center gap-2.5 rounded-xl border border-slate-200 bg-slate-50 px-5 py-3">
+          <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+          <span class="text-sm font-semibold text-slate-700">Google Reviews</span>
+          <span class="text-yellow-400 text-base leading-none">★★★★★</span>
+          <span class="text-sm font-bold text-slate-900">4.9</span>
+          <span class="text-sm text-slate-400">/ 18 beoordelingen</span>
+        </div>
+        <!-- Mini citaten -->
+        <p class="text-sm text-slate-500 italic">"Binnen 2 weken online, precies zoals beloofd." — Mark de Vries</p>
+        <p class="hidden text-sm text-slate-500 italic md:block">"Een website die echt klanten oplevert." — Sandra Jansen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wat je krijgt — foto links, opsomming rechts -->
+  <section class="bg-white py-20">
+    <div class="container">
+      <div class="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm lg:grid lg:grid-cols-2">
+        <!-- Foto links -->
+        <div class="relative min-h-[320px] lg:min-h-full">
+          <img
+            src="/images/about-story.jpeg"
+            alt="Professionele website laten maken"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#006633]/40 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-50/10"></div>
+        </div>
+
+        <!-- Tekst rechts -->
+        <div class="flex flex-col justify-center px-10 py-14">
+          <span class="section-label">Wat je krijgt</span>
+          <h2 class="mt-4 text-3xl font-semibold leading-tight text-slate-900">
+            Snel, professioneel en unieke websites
+          </h2>
+          <p class="mt-4 text-slate-600">
+            Ik bouw websites die perfect aansluiten bij jouw merk en doelstellingen. Met persoonlijke aandacht en oog voor detail.
+          </p>
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Persoonlijke aanpak van A tot Z</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Moderne en responsive designs</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">SEO-geoptimaliseerd vanaf dag 1</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Snelle laadtijden gegarandeerd</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Gebruiksvriendelijk CMS</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Continue support en onderhoud</span>
+            </li>
+          </ul>
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="/contact" class="btn-brand">Plan een gesprek</a>
+            <a href="/cases" class="inline-flex items-center justify-center rounded-lg border border-[#006633] px-6 py-3 text-sm font-semibold text-[#006633] transition hover:bg-[#006633]/5">Bekijk voorbeelden</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pakketten -->
+  <section id="pakketten" class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="max-w-2xl mb-12">
+        <span class="section-label">Pakketten</span>
+        <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Kies het pakket dat bij jou past</h2>
+        <p class="mt-4 text-lg text-slate-600">Van een compacte startsite tot een volledige online aanwezigheid. Elk pakket is afgestemd op jouw bedrijf en regio.</p>
+      </div>
+      <div class="grid gap-8 lg:grid-cols-3">
+
+        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="relative h-48 overflow-hidden bg-slate-100">
+            <img src="/images/block-website.svg" alt="Starter pakket" class="h-full w-full object-cover" />
+          </div>
+          <div class="flex flex-1 flex-col p-8">
+            <span class="text-xs font-semibold uppercase tracking-[0.24em] text-[#006633]">Beginnen</span>
+            <h3 class="mt-3 text-2xl font-semibold text-slate-900">Starter</h3>
+            <p class="mt-3 text-slate-600">Snel online met een sterke eerste site.</p>
+            <div class="mt-6 flex items-baseline gap-1">
+              <span class="text-4xl font-bold text-slate-900">&euro;699</span>
+            </div>
+            <ul class="mt-8 flex-1 space-y-3 text-sm text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> 1-pagina website</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Contactformulier</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Basis SEO</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Snelle oplevering</li>
+            </ul>
+            <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Kies Starter</a>
+          </div>
+        </article>
+
+        <article class="group relative flex flex-col overflow-hidden rounded-2xl border-2 border-[#7C3AED] bg-white shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 inline-flex rounded-full bg-[#7C3AED] px-4 py-2 text-xs font-semibold text-white whitespace-nowrap">Meest gekozen</div>
+          <div class="relative h-48 overflow-hidden bg-slate-100">
+            <img src="/images/block-seo.svg" alt="Pro pakket" class="h-full w-full object-cover" />
+          </div>
+          <div class="flex flex-1 flex-col p-8 pt-10">
+            <span class="text-xs font-semibold uppercase tracking-[0.24em] text-[#7C3AED]">Populair</span>
+            <h3 class="mt-3 text-2xl font-semibold text-slate-900">Pro</h3>
+            <p class="mt-3 text-slate-600">De perfecte balans tussen zichtbaarheid en content.</p>
+            <div class="mt-6 flex items-baseline gap-1">
+              <span class="text-4xl font-bold text-slate-900">&euro;1.499</span>
+            </div>
+            <ul class="mt-8 flex-1 space-y-3 text-sm text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Tot 6 pagina's</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Lokale SEO (3 regio's)</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Content &amp; foto's</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Contact &amp; integratie</li>
+            </ul>
+            <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#006633] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#07512a]">Kies Pro</a>
+          </div>
+        </article>
+
+        <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="relative h-48 overflow-hidden bg-slate-100">
+            <img src="/images/block-content.svg" alt="Growth pakket" class="h-full w-full object-cover" />
+          </div>
+          <div class="flex flex-1 flex-col p-8">
+            <span class="text-xs font-semibold uppercase tracking-[0.24em] text-[#006633]">Schalen</span>
+            <h3 class="mt-3 text-2xl font-semibold text-slate-900">Growth</h3>
+            <p class="mt-3 text-slate-600">Meerdere regio's en groeiende content.</p>
+            <div class="mt-6 flex items-baseline gap-1">
+              <span class="text-4xl font-bold text-slate-900">&euro;2.999</span>
+            </div>
+            <ul class="mt-8 flex-1 space-y-3 text-sm text-slate-600">
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Tot 12 pagina's</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Lokale landingspagina's</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Maandelijks onderhoud</li>
+              <li class="flex items-start gap-2"><span class="text-[#006633]">&#10003;</span> Volledige support</li>
+            </ul>
+            <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Kies Growth</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="mt-12 rounded-2xl border border-slate-200 bg-white p-10 shadow-sm">
+        <h2 class="text-3xl font-semibold text-slate-900">Wat zit in elk pakket?</h2>
+        <p class="mt-2 text-slate-600">Ongeacht welk pakket je kiest, dit krijg je altijd:</p>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+            <p class="font-semibold text-slate-900">Persoonlijk intakegesprek</p>
+            <p class="mt-3 text-sm text-slate-600">We begrijpen jouw bedrijf en doelen eerst.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+            <p class="font-semibold text-slate-900">Snelle oplevering</p>
+            <p class="mt-3 text-sm text-slate-600">Heldere planning en geen overbodige wachttijden.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+            <p class="font-semibold text-slate-900">Mobiel &amp; snel</p>
+            <p class="mt-3 text-sm text-slate-600">Je website laadt razendsnel op alle apparaten.</p>
+          </div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-6">
+            <p class="font-semibold text-slate-900">Duidelijke contactroute</p>
+            <p class="mt-3 text-sm text-slate-600">Bezoekers weten precies hoe ze contact maken.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voordelen -->
+  <section class="bg-white py-20">
+    <div class="container">
+      <div class="max-w-2xl">
+        <span class="section-label">Waarom VB-DigitalMarketing</span>
+        <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Wat maakt onze websites anders?</h2>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-3xl">&#128640;</span>
+          <h3 class="mt-4 text-lg font-semibold text-slate-900">Snel online</h3>
+          <p class="mt-2 text-sm text-slate-600">Jouw website is gemiddeld binnen 2 weken live. Geen maandenlange trajecten.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-3xl">&#128205;</span>
+          <h3 class="mt-4 text-lg font-semibold text-slate-900">Lokaal vindbaar</h3>
+          <p class="mt-2 text-sm text-slate-600">We optimaliseren voor jouw stad en regio zodat klanten om de hoek jou vinden.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-3xl">&#128247;</span>
+          <h3 class="mt-4 text-lg font-semibold text-slate-900">Professioneel design</h3>
+          <p class="mt-2 text-sm text-slate-600">Geen kant-en-klare templates — elke site is op maat.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-3xl">&#128241;</span>
+          <h3 class="mt-4 text-lg font-semibold text-slate-900">Mobiel &amp; snel</h3>
+          <p class="mt-2 text-sm text-slate-600">Geoptimaliseerd voor alle schermen. Snel laden = meer klanten die blijven.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proces -->
+  <section class="bg-[#006633] py-20 text-white">
+    <div class="container">
+      <div class="mb-12 max-w-2xl">
+        <p class="text-sm uppercase tracking-[0.28em] text-white/70">Hoe het werkt</p>
+        <h2 class="mt-4 text-4xl font-semibold">Van idee naar live website in 4 stappen</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-sm uppercase tracking-[0.28em] text-white/60">Stap 1</span>
+          <h3 class="mt-3 text-xl font-semibold">Intakegesprek</h3>
+          <p class="mt-2 text-sm text-slate-300">We leren jouw bedrijf, doelen en doelgroep kennen. Gratis en vrijblijvend.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-sm uppercase tracking-[0.28em] text-white/60">Stap 2</span>
+          <h3 class="mt-3 text-xl font-semibold">Ontwerp &amp; content</h3>
+          <p class="mt-2 text-sm text-slate-300">Wij maken het ontwerp en schrijven de teksten die jouw klanten overtuigen.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-sm uppercase tracking-[0.28em] text-white/60">Stap 3</span>
+          <h3 class="mt-3 text-xl font-semibold">Bouwen &amp; testen</h3>
+          <p class="mt-2 text-sm text-slate-300">De website wordt gebouwd, SEO-geoptimaliseerd en getest op alle apparaten.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-sm uppercase tracking-[0.28em] text-white/60">Stap 4</span>
+          <h3 class="mt-3 text-xl font-semibold">Live &amp; groeien</h3>
+          <p class="mt-2 text-sm text-slate-300">Jouw site gaat live. Wij blijven bereikbaar voor vragen en doorontwikkeling.</p>
+        </div>
+      </div>
+      <a href="/contact" class="mt-10 inline-flex rounded-lg bg-[#7C3AED] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Plan een gratis strategiegesprek</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="max-w-2xl mb-10">
+        <span class="section-label">Veelgestelde vragen</span>
+        <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Alles over website laten maken</h2>
+      </div>
+      <div class="max-w-3xl space-y-4">
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Hoe lang duurt het om een website te laten maken?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Gemiddeld is jouw website binnen 2 tot 3 weken live. Bij het Starter pakket kan dat zelfs in 1 week.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Schrijven jullie ook de teksten?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Ja. Wij verzorgen de teksten. We vragen je om een kort intakegesprek zodat we jouw toon goed kunnen overbrengen.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Kan ik mijn website later uitbreiden?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Absoluut. Elke site is schaalbaar. Je kunt op elk moment upgraden of extra pagina's, regio's of functies toevoegen.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Wat als ik al een website heb?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Dan kijken we samen of een nieuwe site of gerichte verbetering de beste stap is. Eerlijk advies, geen verkooppraatjes.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[#006633] py-20">
+    <div class="container text-center">
+      <h2 class="text-4xl font-semibold text-white">Klaar om online te groeien?</h2>
+      <p class="mt-4 text-xl text-white/80">Plan een gratis gesprek van 20 minuten. Geen verplichtingen, wel concrete inzichten.</p>
+      <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <a href="/contact" class="inline-flex rounded-lg bg-white px-8 py-4 text-sm font-semibold text-[#006633] transition hover:bg-slate-100">Plan een gratis gesprek</a>
+        <a href="/maandelijkse-werkzaamheden" class="inline-flex rounded-lg border border-white/30 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/10">Bekijk maandelijkse werkzaamheden</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

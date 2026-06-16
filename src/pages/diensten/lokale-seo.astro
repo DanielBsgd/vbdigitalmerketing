@@ -1,0 +1,20 @@
+﻿---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const title = 'Lokale SEO | VB-DigitalMarketing';
+const description = 'Verbeter je lokale vindbaarheid met gerichte landingspaginaâ€™s en SEO.';
+---
+
+<BaseLayout {title} {description}>
+  <section class="container py-16 bg-[#004d26] rounded-lg">
+    <div class="grid gap-8 lg:grid-cols-2 items-center">
+      <div>
+        <h1 class="text-3xl font-semibold text-slate-900">Lokale SEO</h1>
+        <p class="mt-4 text-slate-700">Wij optimaliseren je site en maken lokale landingspaginaâ€™s per stad zodat je beter gevonden wordt in jouw regio.</p>
+        <a href="/contact" class="btn-brand mt-6">Meer informatie</a>
+      </div>
+      <div>
+        <img src="/images/service-seo-photo.svg" alt="SEO foto" class="rounded-lg shadow-md" />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

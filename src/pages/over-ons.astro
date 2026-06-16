@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WaveDivider from '../components/WaveDivider.astro';
+const title = 'Over ons | VB-DigitalMarketing';
+const description = 'Het verhaal achter VB-DigitalMarketing en de twee ondernemers die jouw online groei maken.';
+---
+<BaseLayout {title} {description}>
+  <section class="bg-[#006633] py-20">
+    <div class="container grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+      <div class="space-y-8">
+        <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Over ons</span>
+        <div class="space-y-6 max-w-3xl">
+          <h1 class="text-5xl font-semibold leading-tight text-white">Wij bouwen websites voor slimme vakmensen die lokaal willen groeien.</h1>
+          <p class="text-lg leading-8 text-white/80">VB-DigitalMarketing is een klein online bureau met een duidelijke missie: jouw vakmanschap online laten spreken. We combineren strategie, design en lokale zichtbaarheid met een persoonlijke aanpak.</p>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="/contact" class="btn-brand">Plan een kennismaking</a>
+          <a href="/website-laten-maken" class="btn-ghost">Website laten maken</a>
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-[2rem] border border-white/20 shadow-xl">
+        <img src="/images/image00008.jpeg" alt="Stijn en Daniel werken samen aan een website" class="h-full w-full object-cover" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="grid gap-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div class="space-y-8">
+          <span class="section-label">Ons verhaal</span>
+          <h2 class="text-4xl font-semibold text-slate-900">Ons verhaal</h2>
+          <p class="max-w-3xl text-lg leading-8 text-slate-700">Ons verhaal begint met twee ondernemers die zagen dat vakmensen vaak onzichtbaar blijven online. In plaats van losse marketingtermen namen we één opdracht serieus: een website die direct begrijpelijk is en gericht op echte opdrachten.</p>
+          <p class="max-w-3xl text-lg leading-8 text-slate-700">We bouwden ons bureau rondom transparante samenwerking, korte lijnen en praktische oplossingen. Geen overbodige lagen, maar een heldere site die jouw vakmanschap laat zien en klanten uitnodigt om te bellen of te mailen.</p>
+          <p class="max-w-3xl text-lg leading-8 text-slate-700">Dus of je nu een schilder, loodgieter of coach bent: wij maken jouw online presentatie duidelijk, lokaal vindbaar en klaar om meer opdrachten binnen te halen.</p>
+        </div>
+        <div class="rounded-[2rem] overflow-hidden border border-slate-200 shadow-lg">
+          <img src="/images/about-story.jpeg" alt="Stijn en Daniel aan het werk" class="h-full w-full object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20">
+    <div class="container space-y-12">
+      <div class="space-y-6">
+        <span class="section-label">Ons team</span>
+        <h2 class="text-4xl font-semibold text-slate-900">Ontmoet de personen achter VB-DigitalMarketing</h2>
+        <p class="max-w-3xl text-lg leading-8 text-slate-600">We werken kleinschalig en persoonlijk. Hieronder zie je wie je spreekt, wat we doen en hoe we samen jouw website omzetten in een heldere leadgenerator.</p>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-2">
+        <article class="rounded-[2rem] border border-slate-100 bg-white p-6 shadow-md transition-all duration-500 hover:-translate-y-1 hover:border-[#006633]/20 hover:shadow-xl">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+            <img src="/images/image00008.jpeg" alt="Stijn Veentjer" class="h-28 w-28 rounded-3xl object-cover shadow-lg" loading="lazy" />
+            <div>
+              <span class="text-sm uppercase tracking-[0.24em] text-[#006633] font-semibold">Oprichter</span>
+              <h3 class="mt-3 text-3xl font-semibold text-slate-900">Stijn Veentjer</h3>
+              <p class="mt-4 text-slate-600">Strategie en design zijn zijn kracht. Stijn zorgt dat je website er goed uitziet en meteen duidelijk maakt waarom klanten bij jou moeten zijn.</p>
+              <p class="mt-3 text-slate-500">Hij blijft weg van wollige termen en kiest voor een heldere opbouw die klanten meteen helpt kiezen.</p>
+            </div>
+          </div>
+        </article>
+        <article class="rounded-[2rem] border border-slate-100 bg-white p-6 shadow-md transition-all duration-500 hover:-translate-y-1 hover:border-[#006633]/20 hover:shadow-xl">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+            <img src="/images/team.svg" alt="Daniel Bakker" class="h-28 w-28 rounded-3xl object-cover shadow-lg" loading="lazy" />
+            <div>
+              <span class="text-sm uppercase tracking-[0.24em] text-[#006633] font-semibold">Copy &amp; conversie</span>
+              <h3 class="mt-3 text-3xl font-semibold text-slate-900">Daniel Bakker</h3>
+              <p class="mt-4 text-slate-600">Daniel vertaalt jouw vakkennis naar teksten die klanten snappen. Hij maakt je aanbod helder en zorgt dat de site bezoekers naar contact leidt.</p>
+              <p class="mt-3 text-slate-500">Zijn focus ligt op structuur, duidelijkheid en conversie zonder marketingpoespas.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="grid gap-10">
+        <div class="space-y-6">
+          <span class="section-label">Onze methode</span>
+          <h2 class="text-4xl font-semibold text-slate-900">Een methode die werkt voor lokale ondernemers</h2>
+          <p class="max-w-3xl text-lg leading-8 text-slate-700">Elke website die we maken is persoonlijk afgestemd op jouw vakgebied, jouw regio en jouw ideale klant. Zo krijg je zichtbaarheid die direct aansluit op leads en opdrachten.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="group rounded-[2rem] border border-slate-100 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#006633]/20 hover:shadow-xl">
+            <h3 class="text-2xl font-semibold text-slate-900">Jouw doel leidend</h3>
+            <p class="mt-4 text-slate-600">Eerst bepalen we wat jij echt wilt bereiken. Werk aanvragen, meer lokale klanten of betere propositie? Alles volgen we op één doel.</p>
+          </article>
+          <article class="group rounded-[2rem] border border-slate-100 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#006633]/20 hover:shadow-xl">
+            <h3 class="text-2xl font-semibold text-slate-900">Één vaste partner</h3>
+            <p class="mt-4 text-slate-600">Je werkt direct met Stijn en Daniel. Geen wisselende contactpersonen, maar één team dat jouw website van A tot Z realiseert.</p>
+          </article>
+          <article class="group rounded-[2rem] border border-slate-100 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#006633]/20 hover:shadow-xl">
+            <h3 class="text-2xl font-semibold text-slate-900">Resultaatgericht ontwerpen</h3>
+            <p class="mt-4 text-slate-600">We bouwen met een praktijkgerichte structuur die bezoekers begeleidt naar offerteaanvraag, belletje of WhatsApp-klik.</p>
+          </article>
+          <article class="group rounded-[2rem] border border-slate-100 bg-white p-8 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#006633]/20 hover:shadow-xl">
+            <h3 class="text-2xl font-semibold text-slate-900">Altijd helder en persoonlijk</h3>
+            <p class="mt-4 text-slate-600">Geen marketingjargon. Geen onduidelijke beloften. Gewoon een website die je verhaal helder vertelt en klanten helpt kiezen.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#006633] py-20 text-white">
+    <div class="container flex flex-col items-center justify-between gap-6 rounded-[2rem] border border-white/10 bg-white/5 px-8 py-14 text-center shadow-2xl lg:flex-row lg:text-left">
+      <div class="max-w-2xl">
+        <span class="text-sm font-semibold uppercase tracking-[0.24em] text-white/70">Klaar om te starten</span>
+        <h2 class="mt-4 text-4xl font-semibold">Klaar om samen jouw professionele website te maken?</h2>
+        <p class="mt-4 text-slate-100/85">Plan een gratis sessie met Stijn of Daniel en ontdek hoe we jouw vakmanschap sterker neerzetten online.</p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact" class="btn-brand">Plan een kennismaking</a>
+        <a href="/website-laten-maken" class="btn-ghost">Bekijk diensten</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

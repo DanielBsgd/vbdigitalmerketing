@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B6F3A" />
+      <stop offset="1" stop-color="#082E1B" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg6)" />
+  <ellipse cx="490" cy="380" rx="140" ry="140" fill="#fff" opacity="0.16" />
+  <path d="M450 320L530 460" stroke="#00A3E0" stroke-width="28" stroke-linecap="round" />
+  <path d="M530 320L450 460" stroke="#00A3E0" stroke-width="28" stroke-linecap="round" />
+  <path d="M620 520C620 520 700 540 760 460" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+  <path d="M760 460L840 520" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+  <circle cx="840" cy="520" r="36" fill="#00A3E0" />
+  <rect x="220" y="580" width="760" height="160" rx="40" fill="#fff" opacity="0.16" />
+  <text x="140" y="820" font-family="Inter, sans-serif" font-size="72" font-weight="700" fill="#fff">Loodgieter</text>
+</svg>

@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CaseCard from '../components/CaseCard.astro';
+import WaveDivider from '../components/WaveDivider.astro';
+const title = 'Cases | VB-DigitalMarketing';
+const description = "Voorbeelden van websites en lokale pagina's die we hebben gebouwd.";
+---
+
+<BaseLayout {title} {description}>
+  <section class="relative flex min-h-screen items-center overflow-hidden bg-[#006633]">
+    <!-- Foto rechts -->
+    <div class="absolute right-0 top-0 hidden h-full w-1/2 lg:block">
+      <img src="/images/case-boersbreuer.png" alt="Cases VB-DigitalMarketing" class="h-full w-full object-cover object-top" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#006633] via-[#006633]/55 to-transparent"></div>
+    </div>
+    <div class="container relative z-10 py-24 lg:py-0">
+      <div class="max-w-xl">
+        <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Cases</span>
+        <h1 class="mt-6 text-5xl font-bold tracking-tight text-white lg:text-6xl">Onze afgeronde websites</h1>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-white/80">Dakdokternoord.nl, stefwerkt.com en boersbreuer.nl — sites die aantonen hoe we lokale zichtbaarheid en conversies voor vakmensen verbeteren.</p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="/contact" class="btn-brand">Vraag een vergelijkbare website aan</a>
+          <a href="/website-laten-maken" class="btn-ghost">Website laten maken</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-20">
+    <div class="container">
+      <h2 class="text-3xl font-semibold text-slate-900">Voorbeelden van werk</h2>
+      <p class="mt-3 max-w-3xl text-slate-600">Hieronder vind je een selectie van sites die laten zien hoe we online en lokaal resultaat cre&euml;ren voor vakmensen.</p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <CaseCard
+          title="boersbreuer.nl"
+          excerpt="Volledige website voor Boers &amp; Breuer Totaalbouw. Strak design met gouden accenten, kostencalculator, projectenpagina en 24/7 spoedknop &mdash; gericht op offerteaanvragen in regio Waalwijk."
+          image="/images/case-boersbreuer.png"
+          link="https://www.boersbreuer.nl/"
+        />
+        <CaseCard
+          title="dakdokternoord.nl"
+          excerpt="Complete website voor Dakdokter Noord &mdash; projectenpagina, 24/7 spoedservice en gratis dakinspectie als leadmagneet. Gericht op offerteaanvragen voor pannendaken, bitumen en dakramen."
+          image="/images/case-dakdokternoord.png"
+          link="https://www.dakdokternoord.nl/"
+        />
+        <CaseCard
+          title="stefwerkt.com"
+          excerpt="Portfolio en diensten voor een allround klus- en onderhoudsbedrijf, ontworpen voor overzicht en vertrouwen bij lokale klanten."
+          image="/images/case-stefwerkt.png"
+          link="https://www.stefwerkt.com/"
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

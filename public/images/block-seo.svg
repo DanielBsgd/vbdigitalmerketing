@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B6F3A" />
+      <stop offset="1" stop-color="#084926" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg2)" />
+  <rect x="120" y="120" width="960" height="620" rx="40" fill="#fff" opacity="0.12" />
+  <circle cx="440" cy="420" r="120" fill="#fff" opacity="0.2" />
+  <circle cx="440" cy="420" r="80" fill="#fff" opacity="0.35" />
+  <path d="M440 340L440 500" stroke="#00A3E0" stroke-width="24" stroke-linecap="round" />
+  <path d="M360 420L520 420" stroke="#00A3E0" stroke-width="24" stroke-linecap="round" />
+  <path d="M420 360C460 380 460 460 420 480" stroke="#fff" stroke-width="16" stroke-linecap="round" />
+  <path d="M520 320C620 300 760 330 840 420" stroke="#fff" stroke-width="18" stroke-linecap="round" />
+  <circle cx="840" cy="420" r="38" fill="#00A3E0" />
+  <rect x="160" y="560" width="840" height="38" rx="19" fill="#fff" opacity="0.2" />
+  <rect x="160" y="620" width="520" height="32" rx="16" fill="#fff" opacity="0.35" />
+  <rect x="160" y="680" width="380" height="32" rx="16" fill="#fff" opacity="0.35" />
+  <text x="140" y="820" font-family="Inter, sans-serif" font-size="72" font-weight="700" fill="#fff">SEO</text>
+</svg>

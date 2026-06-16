@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WaveDivider from '../../components/WaveDivider.astro';
+const title = 'Blog | VB-DigitalMarketing';
+const description = 'Lees blogposts over lokale SEO, websites en online groei voor vakmensen.';
+---
+<BaseLayout {title} {description}>
+  <section class="bg-[#006633] py-20">
+    <div class="container">
+      <div class="max-w-3xl">
+        <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">Blog</span>
+        <h1 class="mt-6 text-5xl font-semibold leading-tight text-white">Inzichten voor lokale ondernemers</h1>
+        <p class="mt-6 text-lg leading-8 text-white/80">Tips, verhalen en inzichten over websites, lokale vindbaarheid en online groei voor vakmensen. Lees hoe je jouw dienstverlening online sterker neerzet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-slate-50 py-16">
+    <div class="container">
+      <div class="grid gap-8">
+
+        <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white p-10 shadow-sm transition hover:-translate-y-1 hover:shadow-xl lg:grid lg:grid-cols-[1.45fr_0.9fr] lg:gap-8">
+          <div>
+            <span class="inline-flex rounded-full bg-[#006633]/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.24em] text-[#006633]">Webdesign</span>
+            <h2 class="mt-6 text-3xl font-semibold text-slate-900">Webdesign voor bouwbedrijven</h2>
+            <p class="mt-5 text-slate-600">Een website die je vakmanschap zichtbaar maakt voor nieuwe bouwklanten, met een professionele uitstraling en slimme structuur die direct vertrouwen wekt.</p>
+            <a href="/blog/webdesign-voor-bouwbedrijven" class="mt-8 inline-flex items-center justify-center rounded-lg bg-[#006633] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#07512a]">Lees artikel</a>
+          </div>
+          <div class="hidden lg:flex lg:h-full lg:items-center lg:justify-center">
+            <div class="rounded-2xl bg-[#006633] p-8 text-white shadow-inner shadow-black/10">
+              <p class="font-semibold uppercase tracking-[0.24em] text-white/70">Featured</p>
+              <p class="mt-6 text-lg leading-8">Dit artikel legt uit hoe je je website inricht met een duidelijk aanbod, goede teksten en een overtuigende route naar contact.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="grid gap-8 lg:grid-cols-2">
+
+          <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="inline-flex rounded-full bg-[#006633]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#006633]">Website</span>
+            <a href="/blog/conversiegerichte-homepage" class="mt-5 block text-2xl font-semibold text-slate-900 transition hover:text-[#006633]">Conversiegerichte homepage voor vakmensen</a>
+            <p class="mt-4 flex-1 text-slate-600">Help bezoekers snel vinden wat ze zoeken met een overzichtelijke homepage en &eacute;&eacute;n heldere call-to-action.</p>
+            <a href="/blog/conversiegerichte-homepage" class="mt-6 inline-flex items-center justify-center rounded-lg border border-[#006633] px-5 py-2.5 text-sm font-semibold text-[#006633] transition hover:bg-[#006633] hover:text-white">Lees artikel</a>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="inline-flex rounded-full bg-[#006633]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#006633]">SEO</span>
+            <a href="/blog/lokale-seo-voor-schilders" class="mt-5 block text-2xl font-semibold text-slate-900 transition hover:text-[#006633]">Lokale SEO voor schilders</a>
+            <p class="mt-4 flex-1 text-slate-600">Optimaliseer je website voor lokale zoekopdrachten en vergroot je zichtbaarheid in jouw regio.</p>
+            <a href="/blog/lokale-seo-voor-schilders" class="mt-6 inline-flex items-center justify-center rounded-lg border border-[#006633] px-5 py-2.5 text-sm font-semibold text-[#006633] transition hover:bg-[#006633] hover:text-white">Lees artikel</a>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="inline-flex rounded-full bg-[#006633]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#006633]">Portfolio</span>
+            <a href="/blog/slim-portfolio-voor-vakmensen" class="mt-5 block text-2xl font-semibold text-slate-900 transition hover:text-[#006633]">Slim portfolio voor vakmensen</a>
+            <p class="mt-4 flex-1 text-slate-600">Laat je werk spreken met een portfolio dat vertrouwen wekt en bezoekers helpt kiezen voor jouw aanpak.</p>
+            <a href="/blog/slim-portfolio-voor-vakmensen" class="mt-6 inline-flex items-center justify-center rounded-lg border border-[#006633] px-5 py-2.5 text-sm font-semibold text-[#006633] transition hover:bg-[#006633] hover:text-white">Lees artikel</a>
+          </article>
+
+          <article class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <span class="inline-flex rounded-full bg-[#006633]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#006633]">Inzicht</span>
+            <a href="/blog/snelle-start-met-je-website" class="mt-5 block text-2xl font-semibold text-slate-900 transition hover:text-[#006633]">Snel starten met je nieuwe website</a>
+            <p class="mt-4 flex-1 text-slate-600">Een praktische handleiding om snel een sterke eerste website te bouwen zonder marketingjargon.</p>
+            <a href="/blog/snelle-start-met-je-website" class="mt-6 inline-flex items-center justify-center rounded-lg border border-[#006633] px-5 py-2.5 text-sm font-semibold text-[#006633] transition hover:bg-[#006633] hover:text-white">Lees artikel</a>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="mt-16 rounded-2xl border border-slate-200 bg-white p-10 shadow-sm">
+        <span class="section-label">Meer inzichten</span>
+        <h2 class="mt-6 text-3xl font-semibold text-slate-900">Meer artikelen voor lokale ondernemers</h2>
+        <p class="mt-4 text-slate-600">Blijf lezen voor praktische adviezen over websites, vindbaarheid en online presentatie. Iedere post is gemaakt voor zelfstandige vakmensen in Nederland.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#006633] py-20 text-white">
+    <div class="container">
+      <div class="flex flex-col items-start justify-between gap-6 rounded-2xl border border-white/10 bg-white/5 p-10 shadow-2xl lg:flex-row lg:items-center">
+        <div class="max-w-2xl">
+          <h2 class="text-4xl font-semibold">Meer weten over je website en online groei?</h2>
+          <p class="mt-4 text-slate-100/90">Neem contact op en ontdek hoe jouw content strategie klanten kan opleveren.</p>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="/contact" class="btn-brand">Neem contact op</a>
+          <a href="/website-laten-maken" class="btn-outline-white">Bekijk diensten</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
