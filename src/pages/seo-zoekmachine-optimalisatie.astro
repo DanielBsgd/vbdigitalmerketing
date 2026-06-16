@@ -1,0 +1,281 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'SEO Zoekmachine Optimalisatie | VB-DigitalMarketing';
+const description = 'Hoger in Google met professionele SEO. Wij optimaliseren jouw website zodat jij lokaal en nationaal beter gevonden wordt door potentiële klanten.';
+---
+<BaseLayout {title} {description}>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen overflow-hidden bg-[#006633] flex items-center">
+    <div class="absolute right-0 top-0 hidden h-full w-1/2 lg:block">
+      <img src="/images/hero-bg.jpeg" alt="SEO zoekmachine optimalisatie" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#006633] via-[#006633]/60 to-transparent"></div>
+    </div>
+    <div class="container relative z-10 py-24 lg:py-0">
+      <div class="max-w-xl">
+        <span class="inline-flex rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.3em] text-white">SEO &amp; Zoekmachine Optimalisatie</span>
+        <h1 class="mt-6 text-5xl font-bold tracking-tight text-white lg:text-6xl">
+          Hoger in Google, meer klanten
+        </h1>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-white/80">
+          Iedereen wil zijn website zo hoog mogelijk in Google hebben. Wij staan te trappelen om met SEO voor jou aan de slag te gaan — want een website die beter vindbaar is, levert meer bezoekers op en dus meer klandizie.
+        </p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="/contact" class="btn-brand">Plan een gratis gesprek</a>
+          <a href="/cases" class="btn-ghost">Bekijk resultaten</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews — compact -->
+  <section class="bg-white py-8 border-b border-slate-100">
+    <div class="container">
+      <div class="flex flex-wrap items-center gap-6">
+        <div class="flex items-center gap-2.5 rounded-xl border border-slate-200 bg-slate-50 px-5 py-3">
+          <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+          <span class="text-sm font-semibold text-slate-700">Google Reviews</span>
+          <span class="text-yellow-400 text-base leading-none">★★★★★</span>
+          <span class="text-sm font-bold text-slate-900">4.9</span>
+          <span class="text-sm text-slate-400">/ 18 beoordelingen</span>
+        </div>
+        <p class="text-sm text-slate-500 italic">"Na 3 maanden staan we op pagina 1 van Google." — Klaas Hoekstra</p>
+        <p class="hidden text-sm text-slate-500 italic md:block">"Meer aanvragen zonder te adverteren." — Lisa van den Berg</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wat is SEO — foto links, uitleg rechts -->
+  <section class="bg-white py-20">
+    <div class="container">
+      <div class="overflow-hidden rounded-3xl border border-slate-200 bg-slate-50 shadow-sm lg:grid lg:grid-cols-2">
+        <div class="relative min-h-[320px] lg:min-h-full">
+          <img
+            src="/images/about-story.jpeg"
+            alt="SEO werkzaamheden"
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#006633]/40 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-slate-50/10"></div>
+        </div>
+        <div class="flex flex-col justify-center px-10 py-14">
+          <span class="section-label">Wat is SEO?</span>
+          <h2 class="mt-4 text-3xl font-semibold leading-tight text-slate-900">
+            Gevonden worden zonder te adverteren
+          </h2>
+          <p class="mt-4 text-slate-600">
+            SEO staat voor Search Engine Optimization — in het Nederlands zoekmachine optimalisatie. Het principe is simpel: de zoekwoorden waarop jouw bedrijf gevonden wil worden, verwerken we op de juiste manier in jouw website.
+          </p>
+          <p class="mt-4 text-slate-600">
+            Het geeft ons een kick als wij zien dat ondernemers profiteren van onze SEO kennis. Want een hogere positie in Google betekent meer bezoekers, meer vertrouwen en meer opdrachten — structureel, zonder advertentiekosten.
+          </p>
+          <ul class="mt-8 space-y-4">
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Technische optimalisatie van jouw website</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Zoekwoordenonderzoek op maat</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Content die Google én jouw klant begrijpt</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Lokale SEO — gevonden in jouw regio</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#006633] text-xs text-white">&#10003;</span>
+              <span class="font-medium text-slate-800">Maandelijkse rapportage over jouw posities</span>
+            </li>
+          </ul>
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="/contact" class="btn-brand">Plan een gesprek</a>
+            <a href="#pakketten" class="inline-flex items-center justify-center rounded-lg border border-[#006633] px-6 py-3 text-sm font-semibold text-[#006633] transition hover:bg-[#006633]/5">Bekijk pakketten</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voordelen strip -->
+  <section class="bg-[#006633] py-16 text-white">
+    <div class="container">
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#128200;</span>
+          <h3 class="mt-4 text-lg font-semibold">Meer organisch verkeer</h3>
+          <p class="mt-2 text-sm text-white/70">Bezoekers die zelf zoeken naar jouw dienst — zonder advertentiekosten.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#127759;</span>
+          <h3 class="mt-4 text-lg font-semibold">Lokaal vindbaar</h3>
+          <p class="mt-2 text-sm text-white/70">Gevonden worden in jouw stad of regio — precies waar jouw klanten zitten.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#128196;</span>
+          <h3 class="mt-4 text-lg font-semibold">Maandelijkse rapportage</h3>
+          <p class="mt-2 text-sm text-white/70">Inzicht in jouw posities, verkeer en groei — elke maand overzichtelijk.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1">
+          <span class="text-3xl">&#128101;</span>
+          <h3 class="mt-4 text-lg font-semibold">Persoonlijke aanpak</h3>
+          <p class="mt-2 text-sm text-white/70">Geen automatisch pakketje — wij werken specifiek voor jouw branche en regio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Pakketten — 2 blokken -->
+  <section id="pakketten" class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="max-w-2xl mb-12">
+        <span class="section-label">SEO Pakketten</span>
+        <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Kies jouw SEO pakket</h2>
+        <p class="mt-4 text-lg text-slate-600">Beide pakketten zijn maandelijks opzegbaar. Wij beginnen altijd met een nulmeting zodat we precies weten waar je staat en wat er te winnen is.</p>
+      </div>
+      <div class="grid gap-8 lg:grid-cols-2 lg:max-w-4xl lg:mx-auto">
+
+        <!-- Pakket 1 — SEO Starter -->
+        <article class="flex flex-col rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#006633]/10 text-2xl">&#127919;</div>
+          <h3 class="mt-5 text-xl font-semibold text-slate-900">SEO Starter</h3>
+          <p class="mt-2 text-slate-600">Fundament leggen en maandelijks bijhouden. Ideaal voor ondernemers die stap voor stap willen groeien in Google.</p>
+          <div class="mt-5 flex items-baseline gap-1">
+            <span class="text-4xl font-bold text-slate-900">&euro;149</span>
+            <span class="text-slate-500">/mnd</span>
+          </div>
+          <p class="mt-1 text-xs text-slate-400">Maandelijks opzegbaar</p>
+          <ul class="mt-7 flex-1 space-y-3 text-sm text-slate-600">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Nulmeting &amp; zoekwoordenonderzoek</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Aanmelding Google Search Console</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Aanmaken &amp; indienen XML sitemap</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Monitoring op meerdere zoekwoorden</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Optimaliseren Google Snippets (title &amp; meta)</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Vermelding op AlleOndernemers.nl</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> 2 uur SEO werkzaamheden per maand</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#006633] font-bold">&#10003;</span> Maandelijkse ranking rapportage</li>
+          </ul>
+          <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#006633] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#004d26]">Kies SEO Starter</a>
+        </article>
+
+        <!-- Pakket 2 — SEO Groei (aanbevolen) -->
+        <article class="relative flex flex-col rounded-2xl border-2 border-[#7C3AED] bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-[#7C3AED] px-4 py-2 text-xs font-bold text-white">&#9733; Meest gekozen</div>
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#7C3AED]/10 text-2xl">&#128640;</div>
+          <h3 class="mt-5 text-xl font-semibold text-slate-900">SEO Groei</h3>
+          <p class="mt-2 text-slate-600">Volledig ontzorgd — van techniek tot content. Voor ondernemers die serieus willen groeien in de zoekresultaten.</p>
+          <div class="mt-5 flex items-baseline gap-1">
+            <span class="text-4xl font-bold text-slate-900">&euro;299</span>
+            <span class="text-slate-500">/mnd</span>
+          </div>
+          <p class="mt-1 text-xs text-slate-400">Maandelijks opzegbaar</p>
+          <ul class="mt-7 flex-1 space-y-3 text-sm text-slate-600">
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> Alles uit SEO Starter, plus:</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> Uitgebreide technische SEO optimalisatie</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> Content optimalisatie van bestaande pagina's</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> 1 nieuwe SEO-tekst per maand</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> Google Analytics 4 implementatie &amp; analyse</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> Lokale SEO — Google Bedrijfsprofiel optimalisatie</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> Linkbuilding (intern &amp; extern)</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> 4 uur SEO werkzaamheden per maand</li>
+            <li class="flex items-start gap-2"><span class="mt-0.5 text-[#7C3AED] font-bold">&#10003;</span> Maandelijkse rapportage + strategiegesprek</li>
+          </ul>
+          <a href="/contact" class="mt-8 inline-flex w-full justify-center rounded-lg bg-[#7C3AED] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#6D28D9]">Kies SEO Groei</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Werkwijze — groen strip -->
+  <section class="bg-[#006633] py-20 text-white">
+    <div class="container">
+      <div class="mb-12 max-w-2xl">
+        <p class="text-sm uppercase tracking-[0.28em] text-white/70">Onze aanpak</p>
+        <h2 class="mt-4 text-4xl font-semibold">Zo gaan wij te werk</h2>
+      </div>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+          <span class="text-3xl font-black text-white/20">01</span>
+          <h3 class="mt-4 text-lg font-semibold">Nulmeting</h3>
+          <p class="mt-2 text-sm text-white/70">We analyseren jouw huidige posities, technische status en concurrentie in Google.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+          <span class="text-3xl font-black text-white/20">02</span>
+          <h3 class="mt-4 text-lg font-semibold">Strategie</h3>
+          <p class="mt-2 text-sm text-white/70">Op basis van zoekwoordenonderzoek bepalen we welke kansen het meest waardevol zijn voor jouw bedrijf.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+          <span class="text-3xl font-black text-white/20">03</span>
+          <h3 class="mt-4 text-lg font-semibold">Optimalisatie</h3>
+          <p class="mt-2 text-sm text-white/70">We voeren maandelijks technische en inhoudelijke verbeteringen door op jouw website.</p>
+        </div>
+        <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+          <span class="text-3xl font-black text-white/20">04</span>
+          <h3 class="mt-4 text-lg font-semibold">Rapportage</h3>
+          <p class="mt-2 text-sm text-white/70">Elke maand een helder overzicht van jouw rankings, verkeer en de uitgevoerde werkzaamheden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50 py-20">
+    <div class="container">
+      <div class="max-w-2xl mb-10">
+        <span class="section-label">Veelgestelde vragen</span>
+        <h2 class="mt-4 text-4xl font-semibold tracking-tight text-slate-900">Vragen over SEO</h2>
+      </div>
+      <div class="max-w-3xl space-y-4">
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Hoe lang duurt het voordat ik resultaat zie?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">SEO is een lange termijn investering. De eerste verbeteringen zijn vaak al na 4–8 weken zichtbaar, maar echt structurele groei zie je na 3 tot 6 maanden. Hoe eerder je begint, hoe eerder je profiteert.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Werkt SEO ook voor lokale bedrijven?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Absoluut. Lokale SEO is juist ideaal voor vakmensen, schilders, loodgieters, bouwbedrijven en coaches. We zorgen dat jij bovenaan staat als iemand in jouw stad of regio zoekt naar jouw dienst.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Wat is het verschil tussen SEO en Google Ads?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Google Ads geeft direct resultaat maar kost elke maand advertentiebudget. SEO kost meer tijd, maar levert structureel gratis verkeer op. De combinatie van beide is vaak het krachtigst.</p>
+        </details>
+        <details class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900">
+            Heb ik een nieuwe website nodig voor SEO?
+            <span class="ml-4 shrink-0 text-[#006633] transition group-open:rotate-45">&#43;</span>
+          </summary>
+          <p class="mt-4 text-slate-600">Niet per se, maar een technisch goed gebouwde website helpt enorm. Wij kunnen SEO uitvoeren op jouw bestaande website. Is die verouderd? Dan adviseren we je eerlijk over wat de beste stap is.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[#006633] py-20">
+    <div class="container text-center">
+      <h2 class="text-4xl font-semibold text-white">Klaar om hoger in Google te komen?</h2>
+      <p class="mt-4 text-xl text-white/80">Plan een gratis gesprek en ontdek wat SEO voor jouw bedrijf kan betekenen.</p>
+      <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <a href="/contact" class="inline-flex rounded-lg bg-white px-8 py-4 text-sm font-semibold text-[#006633] transition hover:bg-slate-100">Plan een gratis gesprek</a>
+        <a href="/google-ads" class="inline-flex rounded-lg border border-white/30 px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/10">Bekijk Google Ads</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

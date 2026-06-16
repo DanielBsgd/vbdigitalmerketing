@@ -68,7 +68,6 @@ const ogImage = '/images/og-image.svg';
           <img src="/images/vb-logo.jpg" alt="VB Digital Marketing" class="h-12 w-auto object-contain rounded-lg" />
         </a>
         <nav class="flex items-center gap-6 text-sm sm:text-base">
-          <a href="/over-ons" class="nav-link">Over ons</a>
           <div class="group relative">
             <button class="nav-link flex cursor-pointer items-center gap-1 border-0 bg-transparent p-0 font-medium">
               Expertises
@@ -83,12 +82,15 @@ const ogImage = '/images/og-image.svg';
                 <div class="mx-5 my-1 border-t border-slate-100"></div>
                 <a href="/website-onderhoud" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">Website onderhoud</a>
                 <a href="/website-hosting-en-domeinnaam" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">Website hosting &amp; domeinnaam</a>
+                <a href="/google-ads" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">Google Ads</a>
+                <a href="/seo-zoekmachine-optimalisatie" class="block px-5 py-3 text-sm font-medium text-slate-700 transition-colors hover:bg-[#006633]/5 hover:text-[#006633]">SEO &amp; Zoekmachine Optimalisatie</a>
               </div>
             </div>
           </div>
           <a href="/cases" class="nav-link">Cases</a>
           <a href="/locaties" class="nav-link">Lokale pagina's</a>
           <a href="/blog" class="nav-link">Blog</a>
+          <a href="/over-ons" class="nav-link">Over ons</a>
         </nav>
         <div class="ml-4">
           <a href="/contact" class="btn-brand">Contact</a>
@@ -115,7 +117,7 @@ const ogImage = '/images/og-image.svg';
 
         /* 1 — Hero-inhoud (grote groene secties) */
         main.querySelectorAll('[class*="min-h-screen"] .container > div > *:not(.absolute)').forEach(function (el, i) {
-          reg(el, 0.02 + i * 0.07);
+          reg(el, i * 0.04);
         });
 
         /* 2 — Secties buiten hero */
@@ -128,12 +130,12 @@ const ogImage = '/images/og-image.svg';
           /* grid-kaarten met stagger */
           sec.querySelectorAll('.grid > *:not(.absolute)').forEach(function (el) {
             var idx = Array.from(el.parentElement.children).indexOf(el);
-            reg(el, Math.min(idx * 0.06, 0.25));
+            reg(el, Math.min(idx * 0.04, 0.15));
           });
 
           /* FAQ details */
           sec.querySelectorAll('details').forEach(function (el, i) {
-            reg(el, Math.min(i * 0.05, 0.2));
+            reg(el, Math.min(i * 0.03, 0.12));
           });
 
           /* los staande grote blokken (niet in grid) */
@@ -142,7 +144,7 @@ const ogImage = '/images/og-image.svg';
           });
         });
 
-        /* IO — vuurt direct voor elementen al in beeld */
+        /* IO — triggert vroeg, ruim voordat element in beeld is */
         var io = new IntersectionObserver(function (entries) {
           entries.forEach(function (e) {
             if (e.isIntersecting) {
@@ -150,7 +152,7 @@ const ogImage = '/images/og-image.svg';
               io.unobserve(e.target);
             }
           });
-        }, { threshold: 0.01, rootMargin: '0px 0px 80px 0px' });
+        }, { threshold: 0.01, rootMargin: '0px 0px 150px 0px' });
 
         pool.forEach(function (el) { io.observe(el); });
       }

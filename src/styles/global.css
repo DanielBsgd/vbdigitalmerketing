@@ -223,15 +223,15 @@ button, input, textarea {
 
 /* ── Entrance animations ───────────────────────────────────── */
 @keyframes vbUp {
-  from { opacity: 0; transform: translateY(28px); }
+  from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: none; }
 }
 .vb-anim {
   opacity: 0;
-  transform: translateY(28px);
+  transform: translateY(16px);
 }
 .vb-anim.vb-in {
-  animation: vbUp 0.32s cubic-bezier(0.22, 1, 0.36, 1) var(--vb-d, 0s) both;
+  animation: vbUp 0.25s cubic-bezier(0.22, 1, 0.36, 1) var(--vb-d, 0s) both;
 }
 
 /* ── Professional card base ────────────────────────────────── */
